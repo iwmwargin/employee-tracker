@@ -116,10 +116,10 @@ function viewRoles() {
 
 
 function addEmployee() {
-var roleChoice = []
-var managerChoice = []
-var managerQuery = `SELECT * FROM employee`
-var query = `SELECT * FROM role`
+let roleChoice = []
+let managerChoice = []
+let managerQuery = `SELECT * FROM employee`
+let query = `SELECT * FROM role`
 connection.query(query, (err, data) => {
     if (err) throw err;
     roleChoice = data.map(({ id, title }) => (
@@ -253,7 +253,7 @@ function updateRole() {
         {
             name: "id",
             type: "input",
-            message: " What is the employees ID number?"
+            message: " What is the employees ID number?",
         }
     ])
         .then((answers) => {
@@ -279,7 +279,7 @@ function updateRole() {
                         if (err) throw err;
                         console.log("\n")
                         console.log("Employee Updated!")
-                        console.log("\n")
+
                         loadPrompts();
                     })
             })
