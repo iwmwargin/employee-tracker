@@ -13,6 +13,12 @@ class DB {
             `SELECT * FROM department `
         )
     }
+
+    findAllRoles() {
+        return this.connection.promise().query(
+            `SELECT * FROM role`
+        )
+    }
 }
 
 
