@@ -150,9 +150,9 @@ function addDepartment() {
     // const query = "SELECT role.title, role.salary, role.department_id FROM role"
 }
 
-const addRole = async () => {
-    let [departments] = await query(`SELECT * FROM department`)
-    await inquirer.prompt([
+function addRole() {
+    let departments =  (`SELECT * FROM department`)
+    inquirer.prompt([
         {
             name: "role_name",
             message: "What is the name of the role?"
@@ -166,7 +166,7 @@ const addRole = async () => {
         {
             name: "role_department",
             message: "What department will the role be under?",
-            choices: departments.map((departmentName) => {
+            choices: ((departmentName) => {
                 return {
                     name: departmentName.name,
                     value: departmentName.id
@@ -179,7 +179,8 @@ const addRole = async () => {
         salary = answer.roleSalary
         dept = answer.roleDept
         const sqlQuery = `INSERT INTO roles(title, salary, department_id) VALUES ("${title}", "${salary}", "${dept}")`;
-        db.query(sqlQuery)
+        addRole(sqlQuery)
+        loadPrompts()
     })
     // const query = "SELECT role.title, role.salary, role.department_id FROM role"
 }

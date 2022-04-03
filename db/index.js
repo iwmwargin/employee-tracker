@@ -16,7 +16,7 @@ class DB {
 
     findAllRoles() {
         return this.connection.promise().query(
-            `SELECT * FROM role`
+            `SELECT role.title, role.salary, department.name FROM employees.role LEFT JOIN employees.department ON role.department_id = department.id ORDER BY role.salary`
         )
     }
 }
