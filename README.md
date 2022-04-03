@@ -17,12 +17,17 @@
   ## Description
     Employee Tracker is CMS (content management system) interface that will allow a business owner to view and manage the departments, roles and employees within their company.
   ## User Story
-  ```AS A business owner
+
+    ```md
+    AS A business owner
     I WANT to be able to view and manage the departments, roles, and employees in my company
-    SO THAT I can organize and plan my business```
+    SO THAT I can organize and plan my business
+    ```
 
   ## Acceptance Criteria
-  ```GIVEN a command-line application that accepts user input
+
+    ```md
+    GIVEN a command-line application that accepts user input
     WHEN I start the application
     THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
     WHEN I choose to view all departments
