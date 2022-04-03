@@ -5,7 +5,7 @@ class DB {
     }
     findAllEmployees() {
         return this.connection.promise().query(
-            'SELECT employee.id, employee.first_name, employee.last_name , role.title, role.salary FROM employee left join role on employee.role_id=role.id;'
+            'SELECT employee.id AS "ID Number", employee.first_name AS "First Name", employee.last_name AS "Last Name", role.title AS "Title", role.salary AS "Salary" FROM employee left join role on employee.role_id=role.id;'
         )
     }
     findAllDepartments() {
@@ -16,7 +16,7 @@ class DB {
 
     findAllRoles() {
         return this.connection.promise().query(
-            `SELECT role.title, role.salary, department.name FROM employees.role LEFT JOIN employees.department ON role.department_id = department.id ORDER BY role.salary`
+            `SELECT role.title AS "Title", role.salary AS "Salary", department.name AS "Department" FROM employees.role LEFT JOIN employees.department ON role.department_id = department.id ORDER BY role.salary`
         )
     }
 }

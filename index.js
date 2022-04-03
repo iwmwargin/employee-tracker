@@ -137,7 +137,7 @@ connection.query(managerQuery, (err, data) => {
             value: id
         }
     ))
-    managerChoice.push({ name: "none", value: null })
+    managerChoice.push
 
 
     inquirer.prompt([
