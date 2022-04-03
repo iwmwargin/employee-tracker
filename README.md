@@ -66,14 +66,11 @@
   I really want to be able to select the employee from a list when I go to update an employee but I can't crack the code.
 
   ## Screenshots
-  Image of Landing Page
-  <img src="https://github.com/iwmwargin/note-taker/blob/main/public/assets/images/Landing%20Page.png">
+  Image of Terminal
+  <img src="https://github.com/iwmwargin/employee-tracker/blob/main/assets/Employee.png">
   
-  Image of Empty Note Title and Text
-  <img src="https://github.com/iwmwargin/note-taker/blob/main/public/assets/images/Blank.png">
-  
-  Image of Note Taker with Data on Screen
-  <img src="https://github.com/iwmwargin/note-taker/blob/main/public/assets/images/Data.png">
+  Link to Video
+  <a href="https://drive.google.com/file/d/1BCPuPIA3QVhu9iREmF1tWr-ipe90e2O9/view?usp=sharing" target="_blank">Walk Through Video</a>
   
   ## Questions? 
   iwmwargin@gmail.com
